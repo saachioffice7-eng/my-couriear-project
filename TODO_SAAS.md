@@ -1,0 +1,60 @@
+# Task: Rebuild as Professional Courier Management & Expense Dashboard SaaS
+
+## Plan
+- [ ] Step 1: Database Schema Redesign
+  - [ ] Create users/profiles with business info
+  - [ ] Add authentication trigger
+  - [ ] Update parcels schema with worldwide locations
+  - [ ] Add barcode field
+  - [ ] Update rate system for weight ranges
+  - [ ] Add currency settings
+- [ ] Step 2: Authentication System
+  - [ ] Enable Supabase email/phone verification
+  - [ ] Update AuthContext for OTP login
+  - [ ] Create Login page (Email + OTP, Phone + OTP)
+  - [ ] Create Register page
+  - [ ] Update RouteGuard
+  - [ ] Add auth to App.tsx
+- [ ] Step 3: Theme Update
+  - [ ] Change to dark red/maroon theme (#a0001e)
+  - [ ] Update sidebar colors
+  - [ ] Update button styles
+- [ ] Step 4: Location System
+  - [ ] Install country-state-city package
+  - [ ] Create location selector components
+  - [ ] Integrate into parcel form
+- [ ] Step 5: Currency System
+  - [ ] Add currency auto-detection
+  - [ ] Add manual currency override
+  - [ ] Update amount displays
+- [ ] Step 6: Enhanced Validation
+  - [ ] Phone validation (10-15 digits)
+  - [ ] Country-based pin code validation
+- [ ] Step 7: Rate System Rebuild
+  - [ ] Weight range rate tables
+  - [ ] Auto-calculation with ranges
+  - [ ] Custom amount option
+- [ ] Step 8: Barcode Generation
+  - [ ] Install barcode library
+  - [ ] Add barcode to parcels
+  - [ ] Update label print
+- [ ] Step 9: Enhanced Reports
+  - [ ] Multi-courier selection
+  - [ ] Print CSS for table only
+- [ ] Step 10: QR Tracking Page
+  - [ ] Public QR tracking interface
+- [ ] Step 11: Header/Navbar
+  - [ ] Add search navbar
+  - [ ] Show user info
+  - [ ] Logout button
+- [ ] Step 12: Final Testing
+  - [ ] Run lint
+  - [ ] Test authentication flow
+  - [ ] Test all features
+
+## Notes
+- Using Supabase Auth instead of custom JWT
+- Using Supabase instead of MongoDB/Express
+- Theme: Dark red/maroon (#a0001e)
+- Need country-state-city for locations
+- Need barcode generation library
